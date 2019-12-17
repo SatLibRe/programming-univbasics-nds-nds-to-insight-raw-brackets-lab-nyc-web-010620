@@ -22,8 +22,7 @@ require "pry"
 # end
 
 def directors_totals(nds)
-  nds
-  binding.pry
+  
 end 
 
 
