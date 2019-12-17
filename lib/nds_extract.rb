@@ -4,24 +4,27 @@ require 'directors_database'
 require "pry"
 
 
+# def directors_totals(nds)
+# row_index = 0
+# total = 0 
+# new_hash = {}
+
+# while row_index < nds.length do 
+#   new_hash[nds[row_index][:name]] = 0
+#     element_index = 0
+#     while element_index < nds[row_index][:movies].length 
+#       new_hash[nds[row_index][:name]] += nds[row_index][:movies][element_index][:worldwide_gross]
+#       element_index += 1 
+#     end 
+#   row_index += 1
+# end 
+# new_hash
+# end
+
 def directors_totals(nds)
-row_index = 0
-total = 0 
-new_hash = {}
-
-while row_index < nds.length do 
-  new_hash[nds[row_index][:name]] = 0
-    element_index = 0
-    while element_index < nds[row_index][:movies].length 
-      new_hash[nds[row_index][:name]] += nds[row_index][:movies][element_index][:worldwide_gross]
-      element_index += 1 
-    end 
-  row_index += 1
+  nds
+  binding.pry
 end 
-new_hash
-end
-
-
 
 
 
