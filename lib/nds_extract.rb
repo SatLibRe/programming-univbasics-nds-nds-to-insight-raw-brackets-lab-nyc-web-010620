@@ -22,14 +22,20 @@ require "pry"
 # end
 
 def directors_totals(nds)
-  director_totals_hash = {}
+  # director_totals_hash = {}
+  #   nds.each do |directors_data|
+  #   	director_totals_hash[directors_data[:name]] = 0 
+  #   		directors_data[:movies].each do |movies_data|
+  #   	 		director_totals_hash[directors_data[:name]] += movies_data[:worldwide_gross]
+  #     	end
+  #   end 
+  #   director_totals_hash
      nds.each do |directors_data|
-     	director_totals_hash[directors_data[:name]] = 0 
      		directors_data[:movies].each do |movies_data|
-     	 		director_totals_hash[directors_data[:name]] += movies_data[:worldwide_gross]
-      	end
-    end 
-    director_totals_hash
+     	 		director_totals_hash[directors_data[:name]] = movies_data[:worldwide_gross]
+     		end
+   		puts director_totals_hash
+     end 
 end 
 
 
