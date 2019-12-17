@@ -28,8 +28,8 @@ def directors_totals(nds)
      		directors_data[:movies].each do |movies_data|
      	 		director_totals_hash[directors_data[:name]] += movies_data[:worldwide_gross]
       	end
-     	director_totals_hash
     end 
+    director_totals_hash
 end 
 
 
